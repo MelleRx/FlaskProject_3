@@ -9,7 +9,7 @@ from forms import BookingForm, RequestForm
 from extraMethods import random_teachers, free_time
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:21Dima2001@127.0.0.1:5432/Flask_Project2"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:{password}@127.0.0.1:5432/Flask_Project2"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = True
 app.secret_key = "kukulidi"
 db.init_app(app)
